@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8DEB6BAF-974D-4D6D-8E0B-6A6172F55376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cfmg.cafe.manager.application", "src\cfmg.cafe.manager.application\cfmg.cafe.manager.application.csproj", "{DF9974CA-C5E6-4D08-964B-5F7322768C76}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5D1504A3-B58E-439A-8A86-50B18C907F44} = {5D1504A3-B58E-439A-8A86-50B18C907F44}
+		{C2378566-9EF2-4CC7-82A2-5AD719D6417E} = {C2378566-9EF2-4CC7-82A2-5AD719D6417E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cfmg.cafe.manager.domain", "src\cfmg.cafe.manager.domain\cfmg.cafe.manager.domain.csproj", "{5D1504A3-B58E-439A-8A86-50B18C907F44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cfmg.cafe.manager.infrastructure", "src\cfmg.cafe.manager.infrastructure\cfmg.cafe.manager.infrastructure.csproj", "{8246A27C-5501-48E0-9203-1C0FA27EFA93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cfmg.cafe.manager.common.library", "src\cfmg.cafe.manager.common.library\cfmg.cafe.manager.common.library.csproj", "{C2378566-9EF2-4CC7-82A2-5AD719D6417E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF9974CA-C5E6-4D08-964B-5F7322768C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9974CA-C5E6-4D08-964B-5F7322768C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9974CA-C5E6-4D08-964B-5F7322768C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9974CA-C5E6-4D08-964B-5F7322768C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1504A3-B58E-439A-8A86-50B18C907F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1504A3-B58E-439A-8A86-50B18C907F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1504A3-B58E-439A-8A86-50B18C907F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1504A3-B58E-439A-8A86-50B18C907F44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8246A27C-5501-48E0-9203-1C0FA27EFA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8246A27C-5501-48E0-9203-1C0FA27EFA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8246A27C-5501-48E0-9203-1C0FA27EFA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8246A27C-5501-48E0-9203-1C0FA27EFA93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2378566-9EF2-4CC7-82A2-5AD719D6417E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2378566-9EF2-4CC7-82A2-5AD719D6417E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2378566-9EF2-4CC7-82A2-5AD719D6417E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2378566-9EF2-4CC7-82A2-5AD719D6417E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF9974CA-C5E6-4D08-964B-5F7322768C76} = {8DEB6BAF-974D-4D6D-8E0B-6A6172F55376}
+		{5D1504A3-B58E-439A-8A86-50B18C907F44} = {8DEB6BAF-974D-4D6D-8E0B-6A6172F55376}
+		{8246A27C-5501-48E0-9203-1C0FA27EFA93} = {8DEB6BAF-974D-4D6D-8E0B-6A6172F55376}
+		{C2378566-9EF2-4CC7-82A2-5AD719D6417E} = {8DEB6BAF-974D-4D6D-8E0B-6A6172F55376}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>    
+	<RootNameSpace>Cfmg.Cafe.Manager.Domain</RootNameSpace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\cfmg.cafe.manager.common.library\cfmg.cafe.manager.common.library.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - SQL_SERVER=sqlserver
+      - DB_NAME=CafeManager
+      - DB_USER=sa
+      - DB_PASSWORD=cafeAdmin@2024*#
+      - RUN_MIGRATIONS=true
+      - SEED_DATA=true
+      - ASPNETCORE_URLS=http://*:9090
+    ports:
+      - "9090:9090"
+    depends_on:
+      - sqlserver
+    networks:
+      - app-network
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=cafeAdmin@2024*#
+    ports:
+      - "1433:1433"
+    networks:
+      - app-network
+    volumes:
+      - sql-data:/var/opt/mssql
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - REACT_APP_API_BASE_URL=http://localhost:3000/api
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  sql-data:
+    driver: local

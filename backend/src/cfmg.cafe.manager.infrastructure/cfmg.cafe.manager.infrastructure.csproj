@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNameSpace>Cfmg.Cafe.Manager.Infrastructure</RootNameSpace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\cfmg.cafe.manager.common.library\cfmg.cafe.manager.common.library.csproj" />
+    <ProjectReference Include="..\cfmg.cafe.manager.domain\cfmg.cafe.manager.domain.csproj" />
+  </ItemGroup>
+
+</Project>
