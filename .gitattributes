@@ -1,1 +1,1 @@
-frontend/entrypoint.sh
+frontend/entrypoint.sh -text
